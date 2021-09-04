@@ -19,6 +19,6 @@ async function exp() {
     console.log(exponentialNumber);
 };
 
-console.log(exp); //¹⁰
+exp()//¹⁰
 
 ```
