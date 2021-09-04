@@ -12,12 +12,13 @@ var exponentialEight = "⁸";
 var exponentialNine =  "⁹";
 var exponentialZero =  "⁰";
 
-var zArray = [];
 
 module.exports = {
 
     run : async function(number) {
         
+        var zArray = [];
+
         var Nstring = String(number);
 
         for(let karakter of Nstring) {
