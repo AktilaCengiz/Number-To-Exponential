@@ -15,7 +15,7 @@ const numExp = require("number-to-exponential");
 var number = 10;
 
 async function exp() {
-    var exponentialNumber = numExp(number);
+    var exponentialNumber = numExp.run(number);
     console.log(exponentialNumber);
 };
 
