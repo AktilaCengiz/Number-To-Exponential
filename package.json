@@ -1,0 +1,26 @@
+{
+  "name": "number-to-exponential",
+  "version": "1.0.1",
+  "description": "Change to normal number to exponential number with easily.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AktilaCengiz/Number-To-Exponential.git"
+  },
+  "keywords": [
+    "Exponential-number",
+    "number-toexponential",
+    "numbertoexponential",
+    "number",
+    "exponential"
+  ],
+  "author": "Aktila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AktilaCengiz/Number-To-Exponential/issues"
+  },
+  "homepage": "https://github.com/AktilaCengiz/Number-To-Exponential#readme"
+}
