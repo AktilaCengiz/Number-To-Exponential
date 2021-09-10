@@ -1,67 +1,20 @@
-//###############
-// Venosa, Aktila
-//###############
-var exponentialOne =   "¹";
-var exponentialTwo =   "²";
-var exponentialThree = "³";
-var exponentialFour =  "⁴";
-var exponentialFive =  "⁵";
-var exponentialSix =   "⁶";
-var exponentialSeven = "⁷";
-var exponentialEight = "⁸";
-var exponentialNine =  "⁹";
-var exponentialZero =  "⁰";
-
+const ExponentialNumbers = ["⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹"], 
+    NormalNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 module.exports = {
+  run: function(String, Space = false) {
+    if (!String || typeof String !== "string" || String.length < 0) throw new Error("Exponential sayıların dönüşümü için herhangi bir yazı girilmedi.");
 
-    run : async function(number) {
-        
-        var zArray = [];
+    let NewString = "";
+    for (i = 0; i < String.length; i++) {
+      const CurrentNumber = String[i];
+      if (NormalNumbers.includes(CurrentNumber)) 
+        NewString += ExponentialNumbers[CurrentNumber];
 
-        var Nstring = String(number);
+      if (Space && !NormalNumbers.includes(CurrentNumber))
+        NewString += " ";
+    };
 
-        for(let karakter of Nstring) {
-
-            if(karakter == 1) {
-                var n = exponentialOne
-            }
-
-            if(karakter == 2) {
-                var n = exponentialTwo
-            }
-            
-            if(karakter ==  3) {
-                var n = exponentialThree
-            }
-            if(karakter == 4) {
-                var n = exponentialFour
-            }
-            if(karakter == 5) {
-                var n = exponentialFive
-            }
-            if(karakter == 6) {
-                var n = exponentialSix
-            }
-            if(karakter == 7) {
-                var n = exponentialSeven
-            }
-            if(karakter == 8) {
-                var n = exponentialEight
-            }
-            if(karakter == 9) {
-                var n = exponentialNine
-            }
-            if(karakter == 0) {
-                var n = exponentialZero
-            }
-
-            zArray.push(n);
-          }
-          
-          var s = zArray.toString()
-          var d = s.replace(",", "");
-          return d;
-    }
+    return NewString;
+  };
 };
-// Everything start with end..
