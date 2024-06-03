@@ -1,5 +1,5 @@
 {
-  "name": "number-to-exponential",
+  "name": "@AktilaCengiz/number-to-exponential",
   "version": "2.0.1",
   "description": "Change to normal number to exponential number with easily.",
   "main": "index.js",
