@@ -4,8 +4,9 @@
 
 # 📌 What does this module do? 
 
-* - Change to normal number to exponential number with easily.
-* - Example: 10 ➟ ¹⁰ [number to string]
+* Change to normal number to exponential number with easily.
+* Example: 10 ➟ ¹⁰ [number to string]
+* Optional: you can add to space example: 10 ➟ ¹ ⁰
 
 ## 📕  How to use it?
 
@@ -16,9 +17,22 @@ var number = 10;
 
 async function exp() {
     var exponentialNumber = numExp.run(number);
-    console.log(exponentialNumber);
+    console.log(exponentialNumber);//¹⁰
 };
 
-exp()//¹⁰
+exp()
+```
 
+```js
+const numExp = require("number-to-exponential");
+
+var number = 10;
+var space = true;
+
+async function exp() {
+    var exponentialNumber = numExp.run(number,space);
+    console.log(exponentialNumber);//¹ ⁰
+};
+
+exp()
 ```
