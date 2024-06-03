@@ -11,11 +11,6 @@
     "type": "git",
     "url": "git+https://github.com/AktilaCengiz/Number-To-Exponential.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@AktilaCengiz",
-    "access": "public",
-    "tag": "2.0.1"
-  },
   "keywords": [
     "Exponential-number",
     "number-toexponential",
