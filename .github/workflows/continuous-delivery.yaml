@@ -1,4 +1,4 @@
-name: Publish to Github Packages
+name: Publish to GitHub Packages
 
 on:
   release:
@@ -6,15 +6,18 @@ on:
     
 jobs:
   publish:
+    name: Publish to GitHub NPM Registry
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Set up Node.js
+    
+      - name: Set Up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'
-      - uses: JS-DevTools/npm-publish@v3
+          node-version: 20
+      - name: Publish to Github Packages
+        uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          registry: "https://npm.pkg.github.com"
+          registry: https://npm.pkg.github.com
