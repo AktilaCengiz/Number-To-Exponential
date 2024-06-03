@@ -1,6 +1,6 @@
 {
   "name": "number-to-exponential",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Change to normal number to exponential number with easily.",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,11 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AktilaCengiz/Number-To-Exponential.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@AktilaCengiz",
+    "access": "public",
+    "tag": "2.0.1"
   },
   "keywords": [
     "Exponential-number",
